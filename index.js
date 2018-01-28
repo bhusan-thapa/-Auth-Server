@@ -3,7 +3,7 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const http = require('http');
-const keys = require('./config/keys');
+const keys = require('./config/key');
 const app = express();
 mongoose.connect(keys.mongoURI, err => {
   if (err) {
